@@ -14,7 +14,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestGetUsers(t *testing.T) {
-	users, err := getUsers()
+	users, err := getApiData[user]("http://127.0.0.1:8000/users")
 	require.NoError(t, err)
 
 	expectedUsers := []user{
@@ -25,7 +25,7 @@ func TestGetUsers(t *testing.T) {
 }
 
 func TestGetCompanies(t *testing.T) {
-	companies, err := getCompanies()
+	companies, err := getApiData[company]("http://127.0.0.1:8000/companies")
 	require.NoError(t, err)
 
 	expectedCompanies := []company{
