@@ -1,3 +1,11 @@
+## Warning
+
+The code from this project has been copied to https://github.com/IlianIliev/go-topics where you can also find examples and videos about other topics.
+
+This repo may be removed in the future.
+
+
+---
 # Generics in Go
 
 
